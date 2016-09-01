@@ -9,7 +9,7 @@ RUN echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > /etc/apt/
       make \
   && apt-get autoremove -q -y \
   && apt-get clean \
-  && rm -rf /tmp/* /var/tmp/* \
+  && rm -rf /tmp/* /var/tmp/*
 
 #https://github.com/docker/docker/issues/21184
 RUN addgroup --gid 978 docker-fedora \
