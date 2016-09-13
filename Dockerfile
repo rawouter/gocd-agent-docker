@@ -18,4 +18,6 @@ RUN addgroup --gid 978 docker-fedora \
   && adduser go docker-fedora \
   && adduser go docker-ubuntu \
   && adduser go docker-coreos
-  
+
+ADD gocd-agent/go-agent-start.sh /etc/service/go-agent/run
+
