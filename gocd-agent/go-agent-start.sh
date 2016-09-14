@@ -6,7 +6,7 @@ COLOR_START="[01;34m"
 COLOR_END="[00m"
 
 echo -e "${COLOR_START}Starting Go Agent to connect to server $GO_SERVER_URL ...${COLOR_END}"
-sed -i -e 's/GO_SERVER_URL=.*/GO_SERVER_URL='$GO_SERVER_URL /etc/default/go-agent
+sed -i -e 's/GO_SERVER_URL=.*/GO_SERVER_URL='$GO_SERVER_URL'/' /etc/default/go-agent
 
 mkdir -p /var/lib/go-agent/config
 chown go /var/lib/go-agent/config
